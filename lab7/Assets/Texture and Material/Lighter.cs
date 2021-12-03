@@ -13,7 +13,6 @@ public class Lighter : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
-		Debug.Log(col.tag);
         if (col.gameObject.tag == "Player")
         {
             Light.SetActive(true);
